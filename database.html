@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Database</title>
+  <link rel = "stylesheet" href = "styles/NHSstyle.css">
+  <link rel="icon" href="images/NHSlogo.png" type="image/gif" sizes="32x32">
+  <script src="scripts/NHSscr.js"></script>
+</head>
+<body>
+    <h1>
+      Clements National Honor Society
+    </h1>
+    <nav>
+        <ul class="navbar">
+            <li id="page"><a class="navig" href="index.html">Home</a></li>
+            <li id="page"><a class="navig" href="about.html">About</a></li>
+            <li id="page"><a class="navig" href="volunteer.html">Volunteer</a></li>
+            <li id="page"><a class="navig" style="color:white" href="database.html">Database</a></li>
+            <li id="page"><a class="navig" href="faq.html">FAQs</a></li>
+            <li id="page"><a class="navig" href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <table>
+        <tr>
+            <td style="width:40%">
+               <form id="database" onsubmit="myFunction();return false">
+                    <span style="border-bottom: 4px solid rgb(1, 126, 175);font-weight:bold; font-size: 200%">NHS Database</span>
+                    <br><br><br>
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                    <br><br>
+                    <input type="text" id="mname" name="mname" placeholder="Middle Initial (optional)">
+                    <br><br>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    <br><br>
+                    <input type="checkbox" id="fallData" name="fallDataCheck" value="dataCheck">
+                    <label for="fallData"> View Fall Semester Data <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Senior members only)</label>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form> 
+            </td>
+            <!--<img src="https://images-ext-1.discordapp.net/external/X0T_6KBCM5Eh_wkS8G9rKff9K4gOsz15AuzadROq5gQ/https/media.discordapp.net/attachments/679671608838848546/740919629890846750/vibin2.gif" alt="catJam">-->
+            <td style="line-height:1.5vw; padding-right:4vw;padding:2vw" id="persInfo">                
+                <div id="displayName" style="font-size:150%;margin-bottom:1.5vw">
+                <span style="font-weight:bold; font-size:150%">Hello!</span>
+                <br><br><span style="font-size:70%">Welcome to the new NHS database!
+                <br><br>Enter your middle initial ONLY if it was included on your application. Be wary of spelling and don't add unnecessary spaces. Message <a href = "https://www.facebook.com/grace.he.90281/" target="_blank" rel="noopener noreferrer">me</a> if you're having any trouble!
+                <br><br> Hours will be updated roughly once a week. Please be patient, it may take longer!</span> 
+                </div>
+                <div id="displayHours" style="margin-bottom:.5vw;"></div>
+                <div id="displayDues" style="margin-bottom:.5vw;"></div>
+                <!--<div id="displayPlaces" style="margin-bottom:.5vw;"></div>
+                un-comment when we count number of places volunteered at^^
+                -->
+                <div id="displaywithNHS" style="margin-bottom:.5vw"></div>
+                <div id="displaySACs" style="margin-bottom:.5vw"></div>
+                <div id="displaySacReason" style="margin-bottom:.5vw;"></div>
+                <div id="displayCompletion" style="margin-bottom:.5vw;"></div>
+                <img src="https://images-ext-2.discordapp.net/external/S-BwQSix8Irh8aYVyoG0P-vKUu-qMw06RZOSshq87Yo/https/media.discordapp.net/attachments/289170611849396225/740310724584407181/image0-30.gif" id="catCeleb" alt="catJam" style="width:0">
+                <br><br><div style = "font-weight:bold">Last Updated: 5/22</div>
+                <br>
+                SACs and hours as of the above date have been updated!
+            </td>
+        </tr>
+    </table>
+    <!--<div style = "height:3vw; width:73.5vw;padding:3vw;margin:auto;padding-left:3.5vw;background-color: white;"></div>-->
+</body>
+</html>
